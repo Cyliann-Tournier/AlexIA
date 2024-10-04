@@ -2,7 +2,6 @@ import pyaudio
 import json
 import speech_recognition as sr
 import vosk
-import speech_recognition as sr
 
 
 
