@@ -2,6 +2,7 @@ from openai import OpenAI
 import pygame
 import time
 import os
+import pathlib
 
 class TextToSpeech():
     
@@ -32,6 +33,7 @@ class TextToSpeech():
 
             pygame.mixer.music.stop()
             pygame.mixer.quit()
+            pathlib.Path(audio_file).unlink()
             
         else:
             print(f"Erreur : {audio_file} n'a pas été créé.")
