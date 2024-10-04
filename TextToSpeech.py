@@ -38,5 +38,3 @@ class TextToSpeech():
         else:
             print(f"Erreur : {audio_file} n'a pas été créé.")
     
-    def quit_mixer(self):
-        pygame.mixer.quit()

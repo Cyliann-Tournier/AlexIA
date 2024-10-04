@@ -1,0 +1,43 @@
+[
+    {
+    "type": "function",
+    "function": {
+      "name": "exit",
+      "description": "Allows to exit the application"
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "search_track",
+      "description": "Allows to search for a track in Spotify",
+      "parameters": {
+        "type": "object",
+        "properties":{
+          "track_name": {
+            "type": "string",
+            "description": "The track to search for"
+          }
+        },
+        "required": ["track_name"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "playSong",
+      "description": "Allows to play a track in Spotify",
+      "parameters": {
+        "type": "object",
+        "properties":{
+          "track_uri": {
+            "type": "string",
+            "description": "The uri to the track to play"
+          }
+        },
+        "required": ["track_uri"]
+      }
+    }
+  }
+]
